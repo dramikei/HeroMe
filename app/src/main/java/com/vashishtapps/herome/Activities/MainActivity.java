@@ -6,11 +6,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.vashishtapps.herome.Fragments.BackStoryFragment;
 import com.vashishtapps.herome.Fragments.MainFragment;
 import com.vashishtapps.herome.Fragments.PickPowerFragment;
 import com.vashishtapps.herome.R;
 
-public class MainActivity extends AppCompatActivity implements MainFragment.MainFragmentInteractionListener, PickPowerFragment.PickPowerInteractionListerner {
+public class MainActivity extends AppCompatActivity implements MainFragment.MainFragmentInteractionListener, PickPowerFragment.PickPowerInteractionListerner, BackStoryFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,18 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
         this.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, pickPowerFragment).addToBackStack(null).commit();
     }
 
+    public void loadBackStoryScreen() {
+        BackStoryFragment backStoryFragment = new BackStoryFragment();
+        this.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, backStoryFragment).addToBackStack(null).commit();
+    }
+
     @Override
     public void onMainFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
 
     }
 
