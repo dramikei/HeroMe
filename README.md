@@ -1,7 +1,9 @@
 # HeroMe
+
+Created by @rv2011, Free & Fair Usage and Distribution Allowed.
+
 This is a Dummy App which doesnt do anything, but was built to understand exactly how Fragments are used and how to transition from one fragment to another.
 This app also uses a custom ToolBar(or ActionBar).
-
 
 # How Does the App Work?
 When the MainActivity starts, it loads the MainFragment and displays it on to the screen, and when the Select Power Button is pressed the 2nd Fragment is loaded 
@@ -9,7 +11,7 @@ and replaces the MainFragment from the Screen and stores it in BackStack so that
 
 
 # How does the Custom ToolBar works?
-.noActionBar theme is applied on the project to get rid of the Default actionBar, then there is an imageView(in MainActivity layout) on the top which has a minimum Height same as that of the default ActionBar
+NoActionBar theme is applied on the project to get rid of the Default actionBar, then there is an imageView(in MainActivity layout) on the top which has a minimum Height same as that of the default ActionBar
  and has the custom Image of the ActionBar applied on it. thus this is how the Custom ActionBar is made and implemented
 
 # Flaws in the App
@@ -19,8 +21,6 @@ and replaces the MainFragment from the Screen and stores it in BackStack so that
 
 3) UI isnt layed the best way Possible, some UI elements may also bleed out of the screen on smaller Devices, Which can be fixed by using Constraints.
 
-# Conclution
+# Bugs
 
-App made by - Raghav Vashisht
-
-Course enrolled - Devslopes Course for Android
+If you find any bugs or any feature you want to add, Please Submit a Pull Request.  
